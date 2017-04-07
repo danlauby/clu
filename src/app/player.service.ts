@@ -12,4 +12,8 @@ export class PlayerService {
   getPlayers() {
     return this.players;
   }
+
+  getPlayerById(playerId: number) {
+    return this.angularFire.database.object('players/' + playerId);
+  }
 }
