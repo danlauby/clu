@@ -55,11 +55,11 @@ Before running the tests make sure you are serving the app via `ng serve`.
 
   |User Story|Complete|
   |--------------------------------|-----------|
+  |As a user, I'd like all data persisted in a database, so it's always there when I need it|Complete|
   |As a user, I'd like to visit a page to see a list of all team or club members|Complete|
   |As a user, I'd like to click a team or club member's entry in the list to visit their profile page, which should include more details about them|Complete|
   |As a user, I'd like the option to visit an "About" page that explains what the club is, and what they do|Complete|
-  |As a user, I'd like all data persisted in a database, so it's always there when I need it|Incomplete|
-  |As a user, I'd like to filter the list of users by their particular role in the group, or some other information/category|Incomplete|
+  |As a user, I'd like to filter the list of users by their particular role in the group, or some other information/category|Complete|
   |As an administrator, I want to add new users to the club|Incomplete|
   |As an administrator, I want to edit user profiles, in case I make a mistake, or need to update their details|Incomplete|
   |As an administrator, need the option to delete a user, in case they leave the club or team|Incomplete|

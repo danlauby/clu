@@ -1,6 +1,12 @@
-<h2>List of Players:</h2>
+<label>Filter by goals scored:</label>
+<select (change)="onChange($event.target.value)" class="form-group">
+  <option value="allGoals" selected="selected">All Players</option>
+  <option value="lessGoals">Less Goals</option>
+  <option value="moreGoals">More Goals</option>
+</select>
 
-<div class="well" *ngFor="let player of players">
+<h2>List of Players:</h2>
+<div class="well" *ngFor="let player of players | goals:filterByGoals">
   <h3 (click)="goToDetail(player)"><span>{{player.jerseyNumber}}</span>{{player.name}}</h3>
   <p>Age: {{player.age}} Birthplace: {{player.birthplace}}</p>
   <h4>{{player.team}}</h4>

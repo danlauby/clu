@@ -12,6 +12,8 @@ import { PlayerService } from './../player.service';
 
 export class ListPlayersComponent implements OnInit {
   players;
+  filterByGoals: string = "allGoals";
+  
   constructor(private PlayerService: PlayerService, private router: Router) { }
 
   ngOnInit() {
@@ -22,5 +24,9 @@ export class ListPlayersComponent implements OnInit {
 
   goToDetail(Clickedplayer) {
     this.router.navigate(['player', Clickedplayer.$key]);
+  }
+
+  onChange(selectedGoals: string) {
+    this.filterByGoals = selectedGoals;
   }
 }
