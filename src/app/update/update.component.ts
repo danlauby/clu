@@ -23,8 +23,15 @@ export class UpdateComponent implements OnInit {
  }
 
  beginDeletingPlayer(playerToDelete){
-   if(confirm("Arew you sure you want FIRE this player?")){
-     this.playerService.deletePlayer(playerToDelete);
-   }
+  //  if(confirm("Arew you sure you want FIRE this player?")){
+  //    this.playerService.deletePlayer(playerToDelete);
+  //  }
+
+  this.playerToDisplay.subscribe(player => {
+     this.currentPlayer = new Player(player.name, player.age, player.birthplace, player.team, player.position, player.jerseyNumber, player.image, player.goalsThisSeason);
+     this.currentPlayer.$key = player.$key;
+   });
+  this.playerService.updatePlayer(this.currentPlayer);
+
  }
 }

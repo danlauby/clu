@@ -7,6 +7,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 export class GoalsPipe implements PipeTransform {
   transform(input: any[], filterGoals) {
+    if(filterGoals) {
     var output: any[] = [];
     if (filterGoals === "lessGoals") {
       for (let i=0; i < input.length; i++) {
@@ -26,4 +27,5 @@ export class GoalsPipe implements PipeTransform {
       return input;
     }
   }
+}
 }

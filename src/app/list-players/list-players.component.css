@@ -1,3 +1,20 @@
 img {
   width: 600px;
 }
+
+h3 {
+  font-size: 50px;
+  color: white;
+}
+
+.well {
+  background-color: #004812;
+}
+
+p, li, h4 {
+  color: white;
+}
+
+select {
+  width: 100%;
+}

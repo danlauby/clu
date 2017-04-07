@@ -8,4 +8,7 @@
     <p>Position: {{(playerToDisplay | async)?.position}}</p>
     <p>Goals this Season: {{(playerToDisplay | async)?.goalsThisSeason}}</p>
   </div>
+  <!-- <div *ngIf="currentRoute === '/admin'"> -->
+  <app-update [selectedPlayer]="player"></app-update>
+  <!-- </div> -->
 </div>

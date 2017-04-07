@@ -1,17 +1,32 @@
-<label>Filter by goals scored:</label>
-<select (change)="onChange($event.target.value)" class="form-group">
-  <option value="allGoals" selected="selected">All Players</option>
-  <option value="lessGoals">Less Goals</option>
-  <option value="moreGoals">More Goals</option>
-</select>
+<div class="form-group">
+  <label>Filter by goals scored:</label>
+  <select class="custom-select" (change)="onChange($event.target.value)" class="form-group">
+    <option value="allGoals" selected="selected">All Players</option>
+    <option value="lessGoals">Less Goals</option>
+    <option value="moreGoals">More Goals</option>
+  </select>
+</div>
+
 
 
 <div class="well" *ngFor="let player of players | goals:filterByGoals">
-  <h3 (click)="goToDetail(player)"><span>{{player.jerseyNumber}}</span>{{player.name}}</h3>
-  <p>Age: {{player.age}} Birthplace: {{player.birthplace}}</p>
-  <h4>{{player.team}}</h4>
-  <img src="{{player.image}}" alt="Image of {{player.name}}" />
-  <li>Position: {{player.position}}</li>
-  <li>Goals this Season: {{player.goalsThisSeason}}</li>
-  <app-update [selectedPlayer]="player"></app-update>
+  <div class="row">
+    <div class="col-sm-6">
+      <h3 (click)="goToDetail(player)"><span>{{player.jerseyNumber}}</span>{{player.name}}</h3>
+      <p>Age: {{player.age}} Birthplace: {{player.birthplace}}</p>
+      <h4>{{player.team}}</h4>
+      <img src="{{player.image}}" alt="Image of {{player.name}}" />
+      <li>Position: {{player.position}}</li>
+      <li>Goals this Season: {{player.goalsThisSeason}}</li>
+    </div>
+    <div class="col-sm-6">
+      
+      <div *ngIf="currentRoute === '/admin'">
+      <app-update [selectedPlayer]="player"></app-update>
+      </div>
+    </div>
+  </div>
+
+
+
 </div>
