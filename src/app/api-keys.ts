@@ -1,4 +1,4 @@
-exports var masterFirebaseConfig = {
+export var masterFirebaseConfig = {
 apiKey: "AIzaSyAC1vTLDgvxoiWOuDwsQI0Hqk3TI_PtsvE",
 authDomain: "club-manager-76d7f.firebaseapp.com",
 databaseURL: "https://club-manager-76d7f.firebaseio.com",
