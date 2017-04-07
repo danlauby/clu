@@ -12,7 +12,7 @@ import { PlayerService } from './../player.service';
 
 export class ListPlayersComponent implements OnInit {
   players;
-  constructor(private PlayerService: PlayerService) { }
+  constructor(private PlayerService: PlayerService, private router: Router) { }
 
   ngOnInit() {
     this.PlayerService.getPlayers().subscribe( snap => {
@@ -20,4 +20,7 @@ export class ListPlayersComponent implements OnInit {
     });
   }
 
+  goToDetail(Clickedplayer) {
+    this.router.navigate(['player', Clickedplayer.$key]);
+  }
 }
