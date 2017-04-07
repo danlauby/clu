@@ -1,0 +1,9 @@
+{
+  "players": [{
+    "name": "Guy Gugglar",
+    "team": "Portland Timbers",
+    "position": "striker",
+    "image": "https://pbs.twimg.com/profile_images/3779278498/c846e03e1d603710efbaf3e4e1bdd910_400x400.jpeg",
+    "goalsThisSeason": 35
+    }]
+}
