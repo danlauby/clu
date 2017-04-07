@@ -1,9 +1,31 @@
 {
   "players": [{
-    "name": "Guy Gugglar",
+    "name": "Darlington Nagbe",
+    "age": "26 (07/19/1990)",
+    "birthplace": "Monrovia, Liberia",
     "team": "Portland Timbers",
-    "position": "striker",
-    "image": "https://pbs.twimg.com/profile_images/3779278498/c846e03e1d603710efbaf3e4e1bdd910_400x400.jpeg",
-    "goalsThisSeason": 35
-    }]
+    "position": "Forward/Midfielder",
+    "jerseyNumber": "6",
+    "image": "http://images.performgroup.com/di/library/GOAL/2d/1f/darlington-nagbe-mls-portland-timbers-10012016_/1voo4rqdd9n5f1i5jndkdwa2b9.jpg?t=-833223920&w=620&h=430",
+    "goalsThisSeason": 4
+    },
+    {
+    "name": "Diego Valeri",
+    "age": "30 (05/01/1986)",
+    "birthplace": "Valentín Alsina, Argentina",
+    "team": "Portland Timbers",
+    "position": "Midfielder",
+    "jerseyNumber": "8",
+    "image": "https://diegovaleriblog.files.wordpress.com/2016/03/diego-valeri-in-game.jpg?w=1075",
+    "goalsThisSeason": 5
+    },   {
+      "name": "Liam Ridgewell",
+      "age": "32 (07/21/1984)",
+      "birthplace": "Bexleyheath, London, England",
+      "team": "Portland Timbers",
+      "position": "Defender",
+      "jerseyNumber": "24",
+      "image": "https://diegovaleriblog.files.wordpress.com/2016/03/diego-valeri-in-game.jpg?w=1075",
+      "goalsThisSeason": 5
+      }]
 }
