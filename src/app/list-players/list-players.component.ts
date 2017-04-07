@@ -11,13 +11,13 @@ import { PlayerService } from './../player.service';
 })
 
 export class ListPlayersComponent implements OnInit {
-
+  players;
   constructor(private PlayerService: PlayerService) { }
 
   ngOnInit() {
-    // this.PlayerService.getPlayers().subscribe( snap => {
-    //   this.players = snap;
-    // });
+    this.PlayerService.getPlayers().subscribe( snap => {
+      this.players = snap;
+    });
   }
 
 }
