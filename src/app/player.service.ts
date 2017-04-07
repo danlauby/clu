@@ -14,11 +14,24 @@ export class PlayerService {
   }
 
   getPlayerById(playerId: number) {
-    return this.angularFire.database.object('players/' + playerId);
+    return this.angularFire.database.object('/players/' + playerId);
   }
 
 
   addPlayer(newPlayer: Player) {
     this.players.push(newPlayer);
   }
+
+  updatePlayer(localUpdatedPlayer){
+   let albumEntryInFirebase = this.getPlayerById(localUpdatedPlayer.$key);
+   albumEntryInFirebase.update({name: localUpdatedPlayer.name,
+                               age: localUpdatedPlayer.age,
+                               birthplace: localUpdatedPlayer.birthplace,
+                               team: localUpdatedPlayer.team,
+                               position: localUpdatedPlayer.position,
+                               jerseyNumber: localUpdatedPlayer.jerseyNumber,
+                               image: localUpdatedPlayer.image,
+                               goalsThisSeason: localUpdatedPlayer.goalsThisSeason
+                              });
+ }
 }

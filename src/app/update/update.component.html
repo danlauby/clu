@@ -1,0 +1,40 @@
+<div class="well">
+  <h2>Update Player Details:</h2>
+  <div>
+
+      <label>Player Name:</label>
+      <br>
+      <input class="form-control" [(ngModel)]="selectedPlayer.name">
+    
+      <label>Player Age:</label>
+      <br>
+      <input class="form-control" [(ngModel)]="selectedPlayer.age">
+
+      <label>Player Birthplace:</label>
+      <br>
+      <input class="form-control" [(ngModel)]="selectedPlayer.birthplace">
+
+      <label>Player Team:</label>
+      <br>
+      <input class="form-control" [(ngModel)]="selectedPlayer.team">
+
+      <label>Player Position:</label>
+      <br>
+      <input class="form-control" [(ngModel)]="selectedPlayer.position">
+
+      <label>Player Jersey Number:</label>
+      <br>
+      <input class="form-control" [(ngModel)]="selectedPlayer.jerseyNumber">
+
+      <label>Player Image:</label>
+      <br>
+      <input class="form-control" [(ngModel)]="selectedPlayer.image">
+
+      <label>Player Goals this Season:</label>
+      <br>
+      <input class="form-control" [(ngModel)]="selectedPlayer.goalsThisSeason">
+
+    <br>
+    <button (click)="beginUpdatingPlayer(selectedPlayer)">Update</button>
+  </div>
+</div>

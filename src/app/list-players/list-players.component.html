@@ -5,7 +5,7 @@
   <option value="moreGoals">More Goals</option>
 </select>
 
-<h2>List of Players:</h2>
+
 <div class="well" *ngFor="let player of players | goals:filterByGoals">
   <h3 (click)="goToDetail(player)"><span>{{player.jerseyNumber}}</span>{{player.name}}</h3>
   <p>Age: {{player.age}} Birthplace: {{player.birthplace}}</p>
@@ -13,4 +13,5 @@
   <img src="{{player.image}}" alt="Image of {{player.name}}" />
   <li>Position: {{player.position}}</li>
   <li>Goals this Season: {{player.goalsThisSeason}}</li>
+  <app-update [selectedPlayer]="player"></app-update>
 </div>
