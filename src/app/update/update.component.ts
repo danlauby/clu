@@ -21,4 +21,10 @@ export class UpdateComponent implements OnInit {
   beginUpdatingPlayer(PlayerToUpdate){
    this.playerService.updatePlayer(PlayerToUpdate);
  }
+
+ beginDeletingPlayer(playerToDelete){
+   if(confirm("Arew you sure you want FIRE this player?")){
+     this.playerService.deletePlayer(playerToDelete);
+   }
+ }
 }

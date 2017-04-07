@@ -23,8 +23,8 @@ export class PlayerService {
   }
 
   updatePlayer(localUpdatedPlayer){
-   let albumEntryInFirebase = this.getPlayerById(localUpdatedPlayer.$key);
-   albumEntryInFirebase.update({name: localUpdatedPlayer.name,
+   let playerEntryInFirebase = this.getPlayerById(localUpdatedPlayer.$key);
+   playerEntryInFirebase.update({name: localUpdatedPlayer.name,
                                age: localUpdatedPlayer.age,
                                birthplace: localUpdatedPlayer.birthplace,
                                team: localUpdatedPlayer.team,
@@ -33,5 +33,10 @@ export class PlayerService {
                                image: localUpdatedPlayer.image,
                                goalsThisSeason: localUpdatedPlayer.goalsThisSeason
                               });
+ }
+
+ deletePlayer(localPlayerToDelete){
+   var playerEntryInFirebase = this.getPlayerById(localPlayerToDelete.$key);
+   playerEntryInFirebase.remove();
  }
 }
