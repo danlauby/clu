@@ -23,6 +23,15 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 Before running the tests make sure you are serving the app via `ng serve`.
 
+## Firebase
+* Create firebase account ([firebase](https://firebase.google.com/))
+* Create 'src/app/api-keys.ts' file to store Firebase API key with masterFirebaseConfig
+* Import api-keys file in app.module file
+* Import 'angularfire2' with AngularFireModule
+* Export masterFirebaseConfig in app.module
+* List 'AngularFireModule.initializeApp(firebaseConfig)' in @NgModule:imports array
+* List 'src/app/api-keys.ts' in .gitignore file
+
 ## Planning
 
 1. Configuration/dependencies
@@ -47,7 +56,7 @@ Before running the tests make sure you are serving the app via `ng serve`.
   |User Story|Complete|
   |--------------------------------|-----------|
   |As a user, I'd like to visit a page to see a list of all team or club members|Incomplete|
-  
+
   |As a user, I'd like to click a team or club member's entry in the list to visit their profile page, which should include more details about them|Incomplete|
 
   |As a user, I'd like the option to visit an "About" page that explains what the club is, and what they do|Incomplete|
