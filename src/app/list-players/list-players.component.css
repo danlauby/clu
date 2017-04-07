@@ -1,5 +1,6 @@
 img {
   width: 600px;
+  border-radius: 5px;
 }
 
 h3 {
@@ -9,12 +10,34 @@ h3 {
 
 .well {
   background-color: #004812;
+  padding: 20px;
+  margin: 20px;
 }
 
 p, li, h4 {
-  color: white;
+  color: #fdf9f3;
+  font-style: italic;
+}
+h4 {
+  font-size: 40px;
+
 }
 
+li {
+  line-height: 50px;
+  font-size: 20px;
+
+}
 select {
   width: 100%;
+}
+
+.forms {
+  background-position: #004812;
+}
+span {
+  background-color: red;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
 }

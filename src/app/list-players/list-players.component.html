@@ -9,23 +9,20 @@
 
 
 
-<div class="well" *ngFor="let player of players | goals:filterByGoals">
-  <div class="row">
-    <div class="col-sm-6">
+<div class="well forms" *ngFor="let player of players | goals:filterByGoals">
       <h3 (click)="goToDetail(player)"><span>{{player.jerseyNumber}}</span>{{player.name}}</h3>
-      <p>Age: {{player.age}} Birthplace: {{player.birthplace}}</p>
+      <p>Age: {{player.age}}</p>
+      <p>Birthplace: {{player.birthplace}}</p>
       <h4>{{player.team}}</h4>
       <img src="{{player.image}}" alt="Image of {{player.name}}" />
       <li>Position: {{player.position}}</li>
       <li>Goals this Season: {{player.goalsThisSeason}}</li>
-    </div>
-    <div class="col-sm-6">
-      
+
       <div *ngIf="currentRoute === '/admin'">
       <app-update [selectedPlayer]="player"></app-update>
       </div>
-    </div>
-  </div>
+
+
 
 
 
