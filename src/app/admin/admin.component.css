@@ -1,1 +1,15 @@
 
+.forms {
+  background-color: #004812;
+  margin-top: 20px;
+  border: 2px solid black;
+  background-color: rgb(7, 122, 35);
+}
+
+h2 {
+  color: black;
+}
+
+.well {
+  background-color: rgb(7, 122, 35);
+}

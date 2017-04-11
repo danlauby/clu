@@ -25,3 +25,11 @@ text-align: center;
 background-color: #EAE727;
 padding: 10px;
 }
+
+#body {
+  background-color: #004812;
+}
+
+label {
+  color: black;
+}

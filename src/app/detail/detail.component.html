@@ -1,14 +1,9 @@
 <div class="well">
-  <div>
-    <p><span>{{(playerToDisplay | async)?.jerseyNumber}}</span>{{(playerToDisplay | async)?.name}}</p>
-    <img src="{{(playerToDisplay | async)?.image}}" alt="{{(playerToDisplay | async)?.title}}"/>
-    <p>Age: {{(playerToDisplay | async)?.age}}</p>
-    <p>Birthplace: {{(playerToDisplay | async)?.birthplace}}</p>
-    <p>Team: {{(playerToDisplay | async)?.team}}</p>
-    <p>Position: {{(playerToDisplay | async)?.position}}</p>
-    <p>Goals this Season: {{(playerToDisplay | async)?.goalsThisSeason}}</p>
-  </div>
-  <!-- <div *ngIf="currentRoute === '/admin'"> -->
-  <app-update [selectedPlayer]="player"></app-update>
-  <!-- </div> -->
+  <p><span>{{(playerToDisplay | async)?.jerseyNumber}}</span>{{(playerToDisplay | async)?.name}}</p>
+  <img src="{{(playerToDisplay | async)?.image}}" alt="{{(playerToDisplay | async)?.title}}"/>
+  <p>Age: {{(playerToDisplay | async)?.age}}</p>
+  <p>Birthplace: {{(playerToDisplay | async)?.birthplace}}</p>
+  <p>Team: {{(playerToDisplay | async)?.team}}</p>
+  <p>Position: {{(playerToDisplay | async)?.position}}</p>
+  <p>Goals this Season: {{(playerToDisplay | async)?.goalsThisSeason}}</p>
 </div>

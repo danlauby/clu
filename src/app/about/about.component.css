@@ -1,3 +1,7 @@
-body {
+#body {
   background-color: #004812;
+}
+
+p, h2, h3 {
+  color: black;
 }
