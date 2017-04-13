@@ -13,3 +13,12 @@ h2 {
 .well {
   background-color: rgb(7, 122, 35);
 }
+
+.new {
+  margin-left: 45%;
+  margin-top: 20px;
+}
+
+.save {
+  margin-top: 10px;
+}

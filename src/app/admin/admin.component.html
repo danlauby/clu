@@ -1,54 +1,57 @@
-<div class="well forms">
-  <h2>Add a New Player to the Roster:</h2>
-  <div>
+<button class="btn btn-primary new" (click)="onSelect()">New Player</button>
+<div [hidden]="IsHidden">
+  <div class="well forms">
+    <h2>Add a New Player to the Roster:</h2>
     <div>
-      <label>Player Name:</label>
-      <br>
-      <input class="form-control" #newName required>
-    </div>
+      <div>
+        <label>Player Name:</label>
+        <br>
+        <input class="form-control" #newName required>
+      </div>
 
-    <div>
-      <label>Player Age:</label>
-      <br>
-      <input class="form-control" #newAge required>
-    </div>
+      <div>
+        <label>Player Age:</label>
+        <br>
+        <input type="number" class="form-control" #newAge required>
+      </div>
 
-    <div>
-      <label>Player Birthplace:</label>
-      <br>
-      <input class="form-control" #newBirthplace required>
-    </div>
+      <div>
+        <label>Player Birthplace:</label>
+        <br>
+        <input class="form-control" #newBirthplace required>
+      </div>
 
-    <div>
-      <label>Player Team:</label>
-      <br>
-      <input class="form-control" #newTeam required>
-    </div>
+      <div>
+        <label>Player Team:</label>
+        <br>
+        <input class="form-control" #newTeam required>
+      </div>
 
-    <div>
-      <label>Player Position:</label>
-      <br>
-      <input class="form-control" #newPosition required>
-    </div>
+      <div>
+        <label>Player Position:</label>
+        <br>
+        <input class="form-control" #newPosition required>
+      </div>
 
-    <div>
-      <label>Player Jersey Number:</label>
-      <br>
-      <input class="form-control" #newJerseyNumber required>
-    </div>
+      <div>
+        <label>Player Jersey Number:</label>
+        <br>
+        <input type="number" class="form-control" #newJerseyNumber required>
+      </div>
 
-    <div>
-      <label>Player Image:</label>
-      <br>
-      <input class="form-control" #newImage required>
-    </div>
+      <div>
+        <label>Player Image:</label>
+        <br>
+        <input class="form-control" #newImage required>
+      </div>
 
-    <div>
-      <label>Player Goals this Season:</label>
-      <br>
-      <input class="form-control" #newGoalsThisSeason required>
-    </div><br>
-    <button class="btn btn-success" (click)="submitForm(newName.value, newAge.value, newBirthplace.value, newTeam.value, newPosition.value, newJerseyNumber.value, newImage.value, newGoalsThisSeason.value); newName.value=''; newAge.value=''; newBirthplace.value=''; newTeam.value=''; newPosition.value=''; newJerseyNumber.value=''; newImage.value=''; newGoalsThisSeason.value=''">Add to Roster</button>
+      <div>
+        <label>Player Goals this Season:</label>
+        <br>
+        <input type="number" class="form-control" #newGoalsThisSeason required>
+      </div><br>
+      <button class="btn btn-primary save" (click)="onSelect()" (click)="submitForm(newName.value, newAge.value, newBirthplace.value, newTeam.value, newPosition.value, newJerseyNumber.value, newImage.value, newGoalsThisSeason.value); newName.value=''; newAge.value=''; newBirthplace.value=''; newTeam.value=''; newPosition.value=''; newJerseyNumber.value=''; newImage.value=''; newGoalsThisSeason.value=''">Add to Roster</button>
+    </div>
   </div>
 </div>
 

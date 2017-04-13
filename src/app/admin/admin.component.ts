@@ -11,6 +11,7 @@ import { ListPlayersComponent } from './../list-players/list-players.component';
   providers: [PlayerService]
 })
 export class AdminComponent implements OnInit {
+  IsHidden= true;
 
   constructor(public PlayerService: PlayerService) { }
 
@@ -20,5 +21,9 @@ export class AdminComponent implements OnInit {
   submitForm(name: string, age: string, birthplace: string, team: string, position: string, jerseyNumber: string, image: string, goalsThisSeason: number) {
     let newPlayer = new Player(name, age, birthplace, team, position, jerseyNumber, image, goalsThisSeason);
     this.PlayerService.addPlayer(newPlayer);
+ }
+
+ onSelect(){
+  this.IsHidden= !this.IsHidden;
  }
 }

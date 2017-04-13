@@ -1,4 +1,5 @@
-<div class="well">
+<br>
+<div class="well update">
   <h2>Update Player Details:</h2>
   <div>
 
@@ -8,7 +9,7 @@
 
       <label>Player Age:</label>
       <br>
-      <input class="form-control" [(ngModel)]="selectedPlayer.age">
+      <input type="number" class="form-control" [(ngModel)]="selectedPlayer.age">
 
       <label>Player Birthplace:</label>
       <br>
@@ -24,7 +25,7 @@
 
       <label>Player Jersey Number:</label>
       <br>
-      <input class="form-control" [(ngModel)]="selectedPlayer.jerseyNumber">
+      <input type="number" class="form-control" [(ngModel)]="selectedPlayer.jerseyNumber">
 
       <label>Player Image:</label>
       <br>
@@ -32,7 +33,7 @@
 
       <label>Player Goals this Season:</label>
       <br>
-      <input class="form-control" [(ngModel)]="selectedPlayer.goalsThisSeason">
+      <input type="number" class="form-control" [(ngModel)]="selectedPlayer.goalsThisSeason">
 
     <br>
     <button class="btn btn-warning" (click)="beginUpdatingPlayer(selectedPlayer)">Update</button>

@@ -15,6 +15,7 @@ export class ListPlayersComponent implements OnInit {
   currentRoute: string = this.router.url;
   players;
   filterByGoals: string = "allGoals";
+  IsHidden= true;
 
   constructor(private PlayerService: PlayerService, private router: Router) { }
 
@@ -30,5 +31,9 @@ export class ListPlayersComponent implements OnInit {
 
   onChange(selectedGoals: string) {
     this.filterByGoals = selectedGoals;
+  }
+
+  onSelect(){
+   this.IsHidden= !this.IsHidden;
   }
 }
