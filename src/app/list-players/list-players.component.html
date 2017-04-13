@@ -18,9 +18,9 @@
   <li>Position: {{player.position}}</li>
   <li>Goals this Season: {{player.goalsThisSeason}}</li>
 
-  <button class="btn btn-warning" (click)="onSelect()">Edit Player</button>
+  <div *ngIf="currentRoute === '/admin'">
+    <button class="btn btn-warning" (click)="onSelect()">Edit Player</button>
   <div [hidden]="IsHidden">
-    <div *ngIf="currentRoute === '/admin'">
       <app-update [selectedPlayer]="player"></app-update>
     </div>
   </div>
