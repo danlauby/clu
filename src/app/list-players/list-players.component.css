@@ -1,51 +1,59 @@
-img {
-  width: 600px;
-  border-radius: 5px;
+* {
+  box-sizing: border-box;
 }
 
-h2 {
-  font-family: 'Abel', sans-serif;
+.custom-select {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-h3 {
-  font-size: 50px;
-  color: white;
-  font-family: 'Asap', sans-serif;
+.custom-select label {
+  color: #fff;
 }
 
-.well {
-  background-color: rgb(7, 122, 35);
-  padding: 20px;
-  margin: 20px;
+.custom-select input {
+  border-radius: 3px;
+  margin: 10px 0;
+  padding: 5px;
+  border: 1px solid rgba(0 , 0, 0, 0.43);
+  font-size: 16px;
+  width: 80%;
 }
 
-p, li {
-  color: #fdf9f3;
-  font-style: italic;
-}
-h4 {
-  font-size: 40px;
-}
-
-li {
-  line-height: 50px;
-  font-size: 20px;
-
-}
-select {
+.avatar {
   width: 100%;
+  height: 200px;
+  border-radius: 1%;
 }
 
 span {
-  background-color: red;
   border-radius: 5px;
   padding: 5px;
   margin-right: 10px;
-  font-weight: bold;
 }
 
-#forms {
-  background-color: rgb(7, 122, 35);
-  padding: 20px;
-  margin: 20px;
+.player-header {
+  color: #fff;
+  width: 300px;
+}
+
+.jersey {
+  background-color: red;
+  width: 20px;
+  height: 20px;
+}
+
+.player-title {
+  text-align: center;
+}
+
+.player-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.player-list .player-item {
+  width: 32%;
 }

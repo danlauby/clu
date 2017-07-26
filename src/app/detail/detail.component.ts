@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFire, FirebaseListObservable } from 'angularfire2';
+import { AngularFire } from 'angularfire2';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { PlayerService } from '../player.service';

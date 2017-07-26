@@ -1,14 +1,30 @@
-h1 a {
-  font-size: 70px;
-  color: #004812;
-  font-family: monospace;
+body {
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
 }
 
 a {
-  font-size: 30px;
+  font-size: 20px;
   color: #004812;
 }
 
+a:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
 img {
-  width: 200px;
+  width: 80px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }

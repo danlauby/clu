@@ -1,8 +1,9 @@
 import { Component, OnInit, Output } from '@angular/core';
-import { AngularFire, FirebaseObjectObservable } from 'angularfire2';
+import { AngularFire } from 'angularfire2';
 import { PlayerService } from './../player.service';
 import { Player } from './../player.model';
 import { ListPlayersComponent } from './../list-players/list-players.component';
+
 
 @Component({
   selector: 'app-admin',

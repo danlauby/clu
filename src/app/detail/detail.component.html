@@ -1,5 +1,5 @@
 <div class="well">
-  <p><span>{{(playerToDisplay | async)?.jerseyNumber}}</span>{{(playerToDisplay | async)?.name}}</p>
+  <span>{{(playerToDisplay | async)?.jerseyNumber}}</span><h4>{{(playerToDisplay | async)?.name}}</h4>
   <img src="{{(playerToDisplay | async)?.image}}" alt="{{(playerToDisplay | async)?.title}}"/>
   <p>Age: {{(playerToDisplay | async)?.age}}</p>
   <p>Birthplace: {{(playerToDisplay | async)?.birthplace}}</p>

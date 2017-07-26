@@ -1,27 +1,41 @@
-<div class="form-group">
+<div class="custom-select">
   <label>Filter by goals scored:</label>
-  <select class="custom-select" (change)="onChange($event.target.value)" class="form-group">
+  <select (change)="onChange($event.target.value)" class="form-group">
     <option value="allGoals" selected="selected">All Players</option>
     <option value="lessGoals">Less Goals</option>
     <option value="moreGoals">More Goals</option>
   </select>
 </div>
 
+<div class="player-list">
+  <div *ngFor="let player of players | goals:filterByGoals">
+    <div class="player-item">
+      <div
+        class="player-header"
+        (click)="goToDetail(player)">
 
+        <div class="player-header">
 
-<div class="well forms" *ngFor="let player of players | goals:filterByGoals">
-  <h3 (click)="goToDetail(player)"><span>{{player.jerseyNumber}}</span>{{player.name}}</h3>
-  <p>Age: {{player.age}}</p>
-  <p>Birthplace: {{player.birthplace}}</p>
-  <h4>{{player.team}}</h4>
-  <img src="{{player.image}}" alt="Image of {{player.name}}" />
-  <li>Position: {{player.position}}</li>
-  <li>Goals this Season: {{player.goalsThisSeason}}</li>
-
-  <div *ngIf="currentRoute === '/admin'">
-    <button class="btn btn-warning" (click)="onSelect()">Edit Player</button>
-  <div [hidden]="IsHidden">
-      <app-update [selectedPlayer]="player"></app-update>
+          <h3 class="player-title"><span class="jersey">{{player.jerseyNumber}}</span>{{player.name}}</h3>
+        </div>
+      <img
+        class="avatar"
+        src="{{player.image}}"
+        alt="Image of {{player.name}}"
+      />
+      <div *ngIf="currentRoute === '/admin'">
+        <button
+          class="btn btn-warning"
+          (click)="onSelect()">
+            Edit Player
+        </button>
+        <div [hidden]="IsHidden">
+          <app-update
+            [selectedPlayer]="player">
+        </app-update>
+        </div>
+      </div>
+    </div>
     </div>
   </div>
 </div>

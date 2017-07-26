@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFire, FirebaseListObservable } from 'angularfire2';
+import { AngularFire } from 'angularfire2';
 import { Router } from '@angular/router';
 import { PlayerService } from './../player.service';
+
 
 @Component({
   selector: 'app-list-players',
