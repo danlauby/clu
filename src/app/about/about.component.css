@@ -2,6 +2,16 @@
   background-color: #004812;
 }
 
-p, h2, h3 {
-  color: black;
+h2 {
+  font-family: monospace;
+  font-size: 30px;
+  color: #EAE727;
+  font-weight: bold;
+}
+
+p {
+  font-family: Montserrat;
+  color: #fff;
+  font-size: 18px;
+  line-height: 25px;
 }
