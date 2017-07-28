@@ -7,18 +7,33 @@
 }
 
 h2 {
-  color: black;
-}
-
-.well {
-  background-color: rgb(7, 122, 35);
+  color: rgb(17, 17, 18);
+  font-family: Montserrat;
+  font-size: 35px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .new {
   margin-left: 45%;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .save {
   margin-top: 10px;
+}
+
+.add-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+input.add-form {
+  width: 100%;
+}
+
+.group-btn {
+  width: 100%;
+  text-align: center;
 }

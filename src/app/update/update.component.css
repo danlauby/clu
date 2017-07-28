@@ -1,4 +1,22 @@
 .update {
-  background-color: rgb(7, 122, 35);
-  border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 60%;
+}
+
+.update-title  {
+  flex: 100%;
+  text-align: center;
+}
+
+button.btn-warning {
+  margin-right: 10px;
+}
+.update-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
 }

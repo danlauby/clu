@@ -10,7 +10,8 @@
 
 .custom-select label {
   font-family: Montserrat;
-  color: rgb(17, 13, 13);
+  color: #fff;
+  letter-spacing: .3em;
 }
 
 .custom-select select {
@@ -23,8 +24,8 @@
    -webkit-border-radius: 5px;
    -moz-border-radius: 5px;
    border-radius: 5px;
-   background-color: rgb(216, 219, 69);
-   color: rgb(17, 13, 13);
+   background-color: #000;
+   color: #fff;
 }
 
 .avatar {
@@ -36,7 +37,7 @@
 span {
   border-radius: 5px;
   padding: 5px;
-  margin-right: 10px;
+  margin-right: 10px; 
 }
 
 .player-header {
@@ -60,6 +61,7 @@ span {
   justify-content: space-around;
 }
 
-.player-list .player-item {
-  width: 32%;
+.btn-warning {
+  width: 100%;
+  margin-top: 10px;
 }

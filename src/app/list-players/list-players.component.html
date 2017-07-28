@@ -2,8 +2,8 @@
   <label>Filter by goals scored:</label>
   <select (change)="onChange($event.target.value)" class="form-group">
     <option value="allGoals" selected="selected">All Players</option>
-    <option value="lessGoals">Less Goals</option>
-    <option value="moreGoals">More Goals</option>
+    <option value="lessGoals">Least Goals</option>
+    <option value="moreGoals">Most Goals</option>
   </select>
 </div>
 
@@ -13,29 +13,25 @@
       <div
         class="player-header"
         (click)="goToDetail(player)">
-
         <div class="player-header">
-
           <h3 class="player-title"><span class="jersey">{{player.jerseyNumber}}</span>{{player.name}}</h3>
         </div>
-      <img
+        <img
         class="avatar"
         src="{{player.image}}"
         alt="Image of {{player.name}}"
-      />
-      <div *ngIf="currentRoute === '/admin'">
-        <button
-          class="btn btn-warning"
-          (click)="onSelect()">
-            Edit Player
-        </button>
-        <div [hidden]="IsHidden">
-          <app-update
-            [selectedPlayer]="player">
-        </app-update>
-        </div>
+        />
       </div>
     </div>
-    </div>
+    <div
+      class="update-form"
+      *ngIf="currentRoute === '/admin'"
+    >
+      <div>
+          <app-update
+          [selectedPlayer]="player">
+        </app-update>
+      </div>
+  </div>
   </div>
 </div>

@@ -12,11 +12,11 @@ import { PlayerService } from './../player.service';
 })
 
 export class ListPlayersComponent implements OnInit {
-  // players: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
   players;
   filterByGoals: string = "allGoals";
-  IsHidden= true;
+  IsHidden = true;
+  uid: string;
 
   constructor(private PlayerService: PlayerService, private router: Router) { }
 
@@ -35,6 +35,6 @@ export class ListPlayersComponent implements OnInit {
   }
 
   onSelect(){
-   this.IsHidden= !this.IsHidden;
+    this.IsHidden = !this.IsHidden;
   }
 }

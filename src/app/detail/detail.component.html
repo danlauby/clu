@@ -1,9 +1,19 @@
-<div class="well">
-  <span>{{(playerToDisplay | async)?.jerseyNumber}}</span><h4>{{(playerToDisplay | async)?.name}}</h4>
-  <img src="{{(playerToDisplay | async)?.image}}" alt="{{(playerToDisplay | async)?.title}}"/>
-  <p>Age: {{(playerToDisplay | async)?.age}}</p>
-  <p>Birthplace: {{(playerToDisplay | async)?.birthplace}}</p>
-  <p>Team: {{(playerToDisplay | async)?.team}}</p>
-  <p>Position: {{(playerToDisplay | async)?.position}}</p>
-  <p>Goals this Season: {{(playerToDisplay | async)?.goalsThisSeason}}</p>
+<div class="player-view">
+  <div class="profile">
+    <div class="title-view">
+      <div class="bg"></div>
+      <span>{{(playerToDisplay | async)?.jerseyNumber}}</span>
+      <h4>{{(playerToDisplay | async)?.name}}</h4>
+    </div>
+    <img src="{{(playerToDisplay | async)?.image}}" alt="{{(playerToDisplay | async)?.title}}"/>
+
+  </div>
+  <div class="detail-view">
+    <ul>
+      <li><span class="detail-labels">Age:</span><br> {{(playerToDisplay | async)?.age}}</li>
+      <li><span class="detail-labels">Birthplace:</span><br> {{(playerToDisplay | async)?.birthplace}}</li>
+      <li><span class="detail-labels">Position:</span><br> {{(playerToDisplay | async)?.position}}</li>
+      <li><span class="detail-labels">Goals this Season:</span><br> {{(playerToDisplay | async)?.goalsThisSeason}}</li>
+    </ul>
+  </div>
 </div>

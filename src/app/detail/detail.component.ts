@@ -15,7 +15,12 @@ import { Player } from './../player.model';
 export class DetailComponent implements OnInit {
   playerId: number = null;
   playerToDisplay;
+  IsHidden = true;
   constructor(private route: ActivatedRoute, private location: Location, private playerService: PlayerService) { }
+
+  onSelect(){
+   this.IsHidden = !this.IsHidden;
+  }
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {

@@ -1,43 +1,44 @@
 <br>
 <div class="well update">
-  <h2>Update Player Details:</h2>
-  <div>
-
-      <label>Player Name:</label>
-      <br>
-      <input class="form-control" [(ngModel)]="selectedPlayer.name">
-
-      <label>Player Age:</label>
-      <br>
-      <input type="number" class="form-control" [(ngModel)]="selectedPlayer.age">
-
-      <label>Player Birthplace:</label>
-      <br>
-      <input class="form-control" [(ngModel)]="selectedPlayer.birthplace">
-
-      <label>Player Team:</label>
-      <br>
-      <input class="form-control" [(ngModel)]="selectedPlayer.team">
-
-      <label>Player Position:</label>
-      <br>
-      <input class="form-control" [(ngModel)]="selectedPlayer.position">
-
-      <label>Player Jersey Number:</label>
-      <br>
-      <input type="number" class="form-control" [(ngModel)]="selectedPlayer.jerseyNumber">
-
-      <label>Player Image:</label>
-      <br>
-      <input class="form-control" [(ngModel)]="selectedPlayer.image">
-
-      <label>Player Goals this Season:</label>
-      <br>
-      <input type="number" class="form-control" [(ngModel)]="selectedPlayer.goalsThisSeason">
-
+  <h2 class="update-title">Update Player:</h2><br>
+  <div class="group">
+    <label>Name:</label>
     <br>
-    <button class="btn btn-warning" (click)="beginUpdatingPlayer(selectedPlayer)">Update</button>
+    <input class="form-control" [(ngModel)]="selectedPlayer.name">
+
+    <label>Age:</label>
+    <br>
+    <input type="number" class="form-control" [(ngModel)]="selectedPlayer.age">
+
+    <label>Birthplace:</label>
+    <br>
+    <input class="form-control" [(ngModel)]="selectedPlayer.birthplace">
+
+    <label>Previous Team:</label>
+    <br>
+    <input class="form-control" [(ngModel)]="selectedPlayer.team">
   </div>
-  <br>
-  <button class="btn btn-danger" (click)="beginDeletingPlayer(selectedPlayer)">Delete/Fire Player</button>
+  <div class="group">
+    <label>Position:</label>
+    <br>
+    <input class="form-control" [(ngModel)]="selectedPlayer.position">
+
+    <label>Jersey Number:</label>
+    <br>
+    <input type="number" class="form-control" [(ngModel)]="selectedPlayer.jerseyNumber">
+
+    <label>Image(URL):</label>
+    <br>
+    <input class="form-control" [(ngModel)]="selectedPlayer.image">
+
+    <label>Goals this Season:</label>
+    <br>
+    <input type="number" class="form-control" [(ngModel)]="selectedPlayer.goalsThisSeason">
+
+  </div>
+  <div class="update-buttons">
+    <br>
+    <button class="btn btn-warning" (click)="beginUpdatingPlayer(selectedPlayer)">Update Player</button>
+    <button class="btn btn-danger" (click)="beginDeletingPlayer(selectedPlayer)">Fire Player</button>
+  </div>
 </div>
