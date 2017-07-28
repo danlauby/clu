@@ -43,6 +43,7 @@ span {
 .player-header {
   color: #fff;
   width: 300px;
+  padding-top: 30px;
 }
 
 .jersey {
@@ -63,16 +64,42 @@ span {
 
 .player-item  {
   display: flex;
-  /*flex-wrap: wrap;*/
+  margin-bottom: 40px;
 }
 
 .update-form {
   width: 100%;
   justify-content: center;
   margin-left: 100px;
+  background-color: rgb(32, 32, 36);
+  border: 1px solid #064206;
+  padding-bottom: 20px;
+  border-radius: 5px;
+
 }
 
 .btn-warning {
   width: 100%;
   margin-top: 10px;
+}
+
+.update-form li {
+  color: #000;
+}
+
+.list {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.list li {
+  padding: 20px;
+  font-family: monospace;
+  color: red;
+}
+
+.list-title {
+  font-weight: bold;
+  font-family: Montserrat;
+  color: #fff;
 }

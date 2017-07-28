@@ -26,11 +26,17 @@
       class="update-form"
       *ngIf="currentRoute === '/admin'"
       >
-        <div>
-          <app-update
-            [selectedPlayer]="player">
-          </app-update>
-        </div>
+      <ul class="list">
+        <li><span class="list-title">Age:</span>{{player.age}}</li>
+        <li><span class="list-title">Birthplace:</span>{{player.birthplace}}</li>
+        <li><span class="list-title">Previous Team:</span>{{player.team}}</li>
+        <li><span class="list-title">Goals this Season:</span>{{player.goalsThisSeason}}</li>
+      </ul>
+      <div>
+        <app-update
+        [selectedPlayer]="player">
+      </app-update>
+    </div>
   </div>
     </div>
   </div>

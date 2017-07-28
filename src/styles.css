@@ -44,3 +44,19 @@ a:hover {
   margin-top: 20px;
   padding: 25px;
 }
+
+.footer  a {
+  color: #fff !important;
+  /*font-size: 25px;*/
+  padding: 10px;
+}
+
+a:hover {
+  background-color: #EAE727 !important;
+  color: #000 !important;
+  border-radius: 5px;
+}
+
+.footer a {
+  color: #fff;
+}

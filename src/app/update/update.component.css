@@ -2,21 +2,32 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 60%;
 }
 
 .update-title  {
+  margin-top: 0px;
   flex: 100%;
   text-align: center;
+  color: #fff;
+  margin: 0px;
 }
 
 button.btn-warning {
   margin-right: 10px;
 }
+
 .update-buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
   margin-top: 10px;
+}
+
+.group {
+  padding: 15px;
+}
+
+.update label {
+  color: #fff;
 }
