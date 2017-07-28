@@ -23,14 +23,8 @@ h2 {
   margin-top: 10px;
 }
 
-.add-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-input.add-form {
-  width: 100%;
+.add-player {
+  color: rgb(8, 8, 9);
 }
 
 .group-btn {

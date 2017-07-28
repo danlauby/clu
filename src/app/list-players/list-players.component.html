@@ -22,16 +22,16 @@
         alt="Image of {{player.name}}"
         />
       </div>
-    </div>
-    <div
+      <div
       class="update-form"
       *ngIf="currentRoute === '/admin'"
-    >
-      <div>
+      >
+        <div>
           <app-update
-          [selectedPlayer]="player">
-        </app-update>
-      </div>
+            [selectedPlayer]="player">
+          </app-update>
+        </div>
   </div>
+    </div>
   </div>
 </div>

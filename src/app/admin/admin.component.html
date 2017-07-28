@@ -1,10 +1,9 @@
 <h2>COACH ADMIN CENTER</h2>
 
 <button class="btn btn-primary new" (click)="onSelect()">Add New Player</button>
-<div [hidden]="IsHidden">
+<div class="add-player" [hidden]="IsHidden">
   <div class="well forms">
     <h2>Add Player to Roster</h2>
-    <div class="add-form">
       <div class="group">
         <div>
           <label>Name:</label>
@@ -19,7 +18,8 @@
           <input type="number" class="form-control" #newAge #model="ngModel" [(ngModel)]="age" type="text" required>
           <div *ngIf="model.invalid" style="color: red">Required</div>
         </div>
-
+      </div>
+      <div class="group">
         <div>
           <label>Birthplace:</label>
           <br>
@@ -48,7 +48,8 @@
           <input type="number" class="form-control" #newJerseyNumber #model="ngModel" [(ngModel)]="jerseyNumber" type="text" required>
           <div *ngIf="model.invalid" style="color: red">Required</div>
         </div>
-
+      </div>
+      <div class="group">
         <div>
           <label>Image:</label>
           <br>
@@ -62,13 +63,12 @@
           <input type="number" class="form-control" #newGoalsThisSeason required>
           <div *ngIf="model.invalid" style="color: red">Required</div>
         </div>
-
       </div>
+
       <div class="group-btn">
         <button class="btn btn-primary save" (click)="onSelect()" (click)="submitForm(newName.value, newAge.value, newBirthplace.value, newTeam.value, newPosition.value, newJerseyNumber.value, newImage.value, newGoalsThisSeason.value); newName.value=''; newAge.value=''; newBirthplace.value=''; newTeam.value=''; newPosition.value=''; newJerseyNumber.value=''; newImage.value=''; newGoalsThisSeason.value=''">Add to Roster</button>
 
       </div>
-    </div>
   </div>
 </div>
 <div>
